@@ -4,12 +4,15 @@
         <!-- Header -->
         <header>
             <h4 class="line-divider">About</h4>
+            
+            {% capture content %}{% include about-us.markdown %}{% endcapture %}
+            {{ content | markdownify }}
+            <br/>
+            <br/>
             <h1>Meet The Team</h1>
             <div class="row">
                 <div class="span8 offset2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
+                    <p>We take almost as much pride in our staff as we do in our coffee. Meet our team...</p>
                 </div>
             </div>
         </header>
@@ -28,11 +31,21 @@
                         <!-- Team memeber details, activated on hover -->
                         <div class="about-overlay img-circle">
                             <div class="social-icons sicon-white">
-                                <a href="#" class="sicon-facebook"><i>Facebook</i></a>
-                                <a href="#" class="sicon-twitter"><i>Twitter</i></a>
-                                <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
-                                <a href="#" class="sicon-youtube"><i>Youtube</i></a>
-                                <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                {% if team.facebook %}
+                                    <a href="https://facebook.com/{{ team.facebook }}" target="_blank" class="sicon-facebook"><i>Facebook</i></a>
+                                {% endif %}
+                                {% if team.twitter %}
+                                <a href="https://twitter.com/{{ team.twitter }}" class="sicon-twitter"><i>Twitter</i></a>
+                                {% endif %}
+                                {% if team.youtube %}
+                                <a href="https://youtube.com/{{ team.youtube }}" class="sicon-youtube" target="_blank" ><i>Youtube</i></a>
+                                {% endif %}
+                                {% if team.pinterest %}
+                                <a href="https://pinterest.com/{{ team.pinterest }}" class="sicon-pinterest" target="_blank" ><i>Pinterest</i></a>
+                                {% endif %}
+                                {% if team.website %}
+                                <a href="{{ team.website }}" class="sicon-website" target="_blank" ><i>Website</i></a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -40,7 +53,7 @@
                     <!-- Team member name and function -->
                     <h5>
                         {{ team.name }}<br/>
-                        <small>{{ team.title }}</small>
+                        <small>{{ team.position }}</small>
                     </h5>
                     
                     <!-- Team member short info -->
