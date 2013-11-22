@@ -1,0 +1,69 @@
+<!-- PAGE | WORK -->
+<div class="pages" id="page-work">
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h4 class="line-divider">Menu</h4>
+            <h1>Portfolio</h1>
+            <div class="row">
+                <div class="span8 offset2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                </div>
+            </div>
+                
+            <!-- Sub menu -->
+            <!-- 
+            Params: 
+                plugin-filter: Defines links for filtering.
+            -->
+            <nav class="submenu">
+                <ul>
+                    <li>
+                        <a href="#" class="plugin-filter active" data-filter="all">All</a>
+                    </li>
+                    {% for section in site.data.menu.sections %}
+                    <li>
+                        <a href="#" class="plugin-filter" data-filter="{{ section.id }}">{{ section.name }}</a>
+                    </li>
+                    {% endfor %}
+   
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header -->
+            
+        <!-- Article -->
+        <article>
+            <ul class="thumbnails plugin-filter-elements portfolio-items">
+                {% for item in site.data.menu.items %}
+                <li class="span4 mix {{ item.section }} branding">
+                    <a href="#pages/portfolio/project_1.html" data-destination="portfolio-items" data-insert="before">
+                        <!-- Portfolio image -->
+                        <img src="http://placehold.it/390x300" alt="{{ item.name }}">
+                        
+                        <!-- Portfolio name, activated on hover -->
+                        <div class="portfolio-overlay">
+                            <h4>{{ item.name }}</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <!-- End Article -->
+        
+        <!-- Footer -->
+        <footer>
+            <div class="show-more-cube">
+                 <a href="/menu" data-destination="plugin-filter-elements" data-insert="appendTo" data-action="remove">
+                    <span>Show<br/>More</span>
+                </a>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </div>
+</div>
+<!-- END PAGE | WORK -->
+
+{{ include customers.html }}

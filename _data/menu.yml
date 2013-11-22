@@ -1,0 +1,22 @@
+sections:
+  - id: coffee
+    name: Coffee
+  - id: tea
+    name: Tea
+  - id: cake
+    name: Cakes
+
+
+#- name: Americano
+#  section: coffee
+#  price: 
+#    small: 1.20
+#    medium: 1.60
+#    large: 2.20
+#  
+#- name: Cappuccino
+#  section: coffee
+#  price: 
+#    small: 1.40
+#    medium: 1.80
+#    large: 2.40

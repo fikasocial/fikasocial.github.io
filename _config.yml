@@ -1,0 +1,43 @@
+
+
+title: Welcome to Fika Social
+description: Great coffee in Bristol
+
+twitter: FikaSocial
+facebook: FikaSocial
+
+telephone-number: Not available yet
+email-address: info@fikasocial.co.uk
+address: Not yet ready for opening... check back soon
+
+# Contact form tag line
+contact-us: Have questions? We love to hear from customers, get in touch and we'll respond as quickly as possible
+
+
+
+
+
+#------------------------------------------------------------------------------
+#
+#                  No editing below this line
+#
+#------------------------------------------------------------------------------
+
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+include:     ['.htaccess']
+exclude:     []
+keep_files:  ['.git']
+gems:        []
+
+timezone: GMT
+encoding: UTF-8
+
+permalink:     date
+paginate_path: 'page:num'
+
+markdown:      maruku
+markdown_ext:  markdown,mkd,mkdn,md
+textile_ext:   textile
