@@ -39,5 +39,26 @@
         ga('create', '{{ site.googleAnayltics }}', '{{ site.domain }}');
         ga('send', 'pageview');
     </script>
+    <script src="//www.openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript">
+        var drawMap = function() {
+            var map = new OpenLayers.Map('findUs');
+            map.addLayer(new OpenLayers.Layer.OSM())
+         
+            var lonLat = new OpenLayers.LonLat({{ site.location.latitude }} ,{{ site.location.longitude }})
+                  .transform(
+                    new OpenLayers.Projection('EPSG:4326'), // transform from WGS 1984
+                    map.getProjectionObject() // to Spherical Mercator Projection
+                  )
+            var zoom = 16
+         
+            var markers = new OpenLayers.Layer.Markers('Markers')
+            map.addLayer(markers);
+         
+            markers.addMarker(new OpenLayers.Marker(lonLat))
+            map.setCenter(lonLat, zoom)
+        }
+        if (document.getElementById('findUs')) drawMap()
+      </script>
 </body>
 </html>
