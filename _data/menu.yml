@@ -1,3 +1,6 @@
+introduction:
+  Below we list our most popular items, but click 'show more' to see our full menu. All products are locally sourced.
+
 sections:
   - id: coffee
     name: Coffee
@@ -6,17 +9,21 @@ sections:
   - id: cake
     name: Cakes
 
+items:
+  - name: Americano
+    section: coffee
+    image: americano.jpg
+    featured: true
+    price:
+      small: 1.20
+      medium: 1.60
+      large: 2.20
 
-#- name: Americano
-#  section: coffee
-#  price: 
-#    small: 1.20
-#    medium: 1.60
-#    large: 2.20
-#  
-#- name: Cappuccino
-#  section: coffee
-#  price: 
-#    small: 1.40
-#    medium: 1.80
-#    large: 2.40
+  - name: Cappuccino
+    section: coffee
+    image: cappuccino.jpg
+    featured: true
+    price:
+      small: 1.40
+      medium: 1.80
+      large: 2.40

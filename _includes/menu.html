@@ -1,5 +1,5 @@
 <!-- PAGE | WORK -->
-<div class="pages" id="page-work">
+<div class="pages" id="menu">
     <div class="container">
         <!-- Header -->
         <header>
@@ -7,15 +7,14 @@
             <h1>Menu</h1>
             <div class="row">
                 <div class="span8 offset2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    <p>{{ site.data.menu.introduction }}
                     </p>
                 </div>
             </div>
-                
+
             <!-- Sub menu -->
-            <!-- 
-            Params: 
+            <!--
+            Params:
                 plugin-filter: Defines links for filtering.
             -->
             <nav class="submenu">
@@ -28,32 +27,34 @@
                         <a href="#" class="plugin-filter" data-filter="{{ section.id }}">{{ section.name }}</a>
                     </li>
                     {% endfor %}
-   
+
                 </ul>
             </nav>
         </header>
         <!-- End Header -->
-            
+
         <!-- Article -->
         <article>
             <ul class="thumbnails plugin-filter-elements portfolio-items">
                 {% for item in site.data.menu.items %}
-                <li class="span4 mix {{ item.section }} branding">
-                    <a href="#pages/portfolio/project_1.html" data-destination="portfolio-items" data-insert="before">
-                        <!-- Portfolio image -->
-                        <img src="http://placehold.it/390x300" alt="{{ item.name }}">
-                        
+                {% if item.featured %}
+                <li class="span4 mix {{ item.section }} branding menu-item">
+                    <a href="#pages/menu/{{ item.section }}.html" data-destination="portfolio-items" data-insert="before">
+                        <div class="menu-item-image" style="background-image:url('/assets/images/menu/{{ item.image }}');" alt="{{ item.name }}">&nbsp;</div>
+
+
                         <!-- Portfolio name, activated on hover -->
                         <div class="portfolio-overlay">
                             <h4>{{ item.name }}</h4>
                         </div>
                     </a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </article>
         <!-- End Article -->
-        
+
         <!-- Footer -->
         <footer>
             <div class="show-more-cube">

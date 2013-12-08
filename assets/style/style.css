@@ -1,0 +1,14 @@
+#page-welcome {
+    filter: blur(5px);
+    // Browser Specific
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+li.menu-item div.menu-item-image {
+    width: 390px;
+    height: 300px;
+    background-size:cover;
+}
