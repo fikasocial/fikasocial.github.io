@@ -15,9 +15,9 @@ items:
     image: americano.jpg
     featured: true
     price:
-      small: 1.20
-      medium: 1.60
-      large: 2.20
+      small: 2.20
+      medium: 3.60
+      large: 8.20
 
   - name: Cappuccino
     section: coffee
