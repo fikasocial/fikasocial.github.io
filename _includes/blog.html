@@ -20,21 +20,11 @@
                     <li>
                         <a href="{{ site.url }}/blog/">All</a>
                     </li>
+                    {% for category in site.categories %}
                     <li>
-                        <a href="{{ site.url }}/blog/">Technology</a>
+                        <a href="{{ site.url }}/blog/{{ category | first }}">{{ category | first }}</a>
                     </li>
-                    <li>
-                        <a href="{{ site.url }}/blog/">Design</a>
-                    </li>
-                    <li>
-                        <a href="{{ site.url }}/blog/">Future trends</a>
-                    </li>
-                    <li>
-                        <a href="{{ site.url  }}/blog/">Photography</a>
-                    </li>
-                    <li>
-                        <a href="{{ site.url }}/blog/">Other</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </nav>
         </header>

@@ -1,7 +1,8 @@
 ---
 
 title: Fika Social the new kid on the block in Bristol
-layout: blog
+categories: [ 'store', 'general' ]
+layout: post
 
 ---
 
