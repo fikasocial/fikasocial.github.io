@@ -29,7 +29,6 @@ items:
       small: 1.40
       medium: 1.80
       large: 2.40
-<<<<<<< HEAD
 
   - name: Breakfast Tea
     section: tea
@@ -57,5 +56,4 @@ items:
       small: 1.40
       medium: 1.80
       large: 2.40
-=======
->>>>>>> d414bd510977ae5037043758a17a9224128ca883
+
