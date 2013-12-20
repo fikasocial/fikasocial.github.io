@@ -127,39 +127,7 @@
                     </div>
                     <!-- End Blog Write comment -->
                 </div>
-                <div class="span4 blog-list-right">
-                    <!-- Latest blog posts block -->
-                    <div class="block">
-                        <h6>Latest blog posts</h6>
-                        <ul class="simple-link-list">
-                            <ul>
-                            {% for post in site.posts %}
-                            <li>
-                             <a href="{{ post.url }}">{{ post.title }}</a>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-
-                    <!-- Tags -->
-                    <div class="block">
-                        <h6>Categories</h6>
-                        <nav class="submenu">
-                            <ul>
-                                <li><a href="{{ site.url }}/blog">All</a></li>
-                                {% for category in site.categories %}
-                                <li><a href="/{{ category | first }}">{{ category | first }} </a></li>
-                                {% endfor %}
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <!-- Twitter -->
-                    <div class="block">
-                        <h6>Twitter</h6>
-                        <div class="twitterfeed"></div>
-                    </div>
-                </div>
+                {% include blog-sidebar %}
             </div>
         </div>
     </div>

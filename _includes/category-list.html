@@ -1,0 +1,11 @@
+<div class="block">
+    <h6>Categories</h6>
+    <nav class="submenu">
+        <ul>
+            <li><a href="{{ site.url }}/blog">All</a></li>
+            {% for category in site.categories %}
+            <li><a href="/{{ category | first }}">{{ category | first }} </a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

@@ -34,7 +34,7 @@
         <article>
             <!-- Blog articles -->
             <ul class="thumbnails">
-                {% for post in site.posts %}
+                {% for post in site.posts limit:6 %}
                 <li class="span4">
                   <a href="{{ post.url }}">
                       {% if post.image %}
@@ -43,7 +43,7 @@
                       <img src="http://placehold.it/390x300" />
                       {% endif %}
                     </a>
-                    <h5>{{ post.title }}<br/>{{ post.date }}</h5>
+                    <h5>{{ post.title }}<br/>{{ post.date | date_to_long_string }}</h5>
                     <p class="smallFontBy08">{{ post.excerpt }}</p>
                     <div class="read-more">
                       <a href="{{ post.url }}">Read More...</a>
