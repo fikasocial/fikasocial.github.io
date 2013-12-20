@@ -43,7 +43,7 @@ gems:        []
 timezone: GMT
 encoding: UTF-8
 
-permalink:     date
+permalink:     /blog/:year-:month-:day-:title.html
 paginate_path: 'page:num'
 
 markdown:      maruku

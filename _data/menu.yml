@@ -8,6 +8,8 @@ sections:
     name: Tea
   - id: cake
     name: Cakes
+  - id: sandwich
+    name: Sandwiches
 
 items:
   - name: Americano
@@ -23,6 +25,33 @@ items:
     section: coffee
     image: cappuccino.jpg
     featured: true
+    price:
+      small: 1.40
+      medium: 1.80
+      large: 2.40
+
+  - name: Breakfast Tea
+    section: tea
+    image: english-breakfast.jpg
+    featured: true
+    price:
+      small: 1.40
+      medium: 1.80
+      large: 2.40
+
+  - name: Earl Grey
+    section: tea
+    image: earl-grey.jpg
+    featured: true
+    price:
+      small: 1.40
+      medium: 1.80
+      large: 2.40
+
+  - name: Herbal Tea (Various)
+    section: tea
+    image: herbal-tea.jpg
+    featured: false
     price:
       small: 1.40
       medium: 1.80

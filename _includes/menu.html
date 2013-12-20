@@ -39,7 +39,7 @@
                 {% for item in site.data.menu.items %}
                 {% if item.featured %}
                 <li class="span4 mix {{ item.section }} branding menu-item">
-                    <a href="#pages/menu/{{ item.section }}.html" data-destination="portfolio-items" data-insert="before">
+                    <a href="#pages/menu.html#{{ item.section }}" data-destination="portfolio-items" data-insert="before">
                         <div class="menu-item-image" style="background-image:url('/assets/images/menu/{{ item.image }}');" alt="{{ item.name }}">&nbsp;</div>
 
 
@@ -59,7 +59,7 @@
         <footer>
             <div class="show-more-cube">
                  <a href="/menu" data-destination="plugin-filter-elements" data-insert="appendTo" data-action="remove">
-                    <span>Show<br/>More</span>
+                    <span>See the<br/>full menu</span>
                 </a>
             </div>
         </footer>
