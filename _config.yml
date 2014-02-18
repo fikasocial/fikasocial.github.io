@@ -1,5 +1,4 @@
 
-
 title: Welcome to Fika Social
 description: Great coffee in Bristol
 
@@ -8,11 +7,11 @@ facebook: FikaSocial
 
 telephone-number: Not available yet
 email-address: info@fikasocial.co.uk
-address: Not yet ready for opening... check back soon
+address: 41 High Street, Bristol, BS1 2AT
 
 location:
-  latitude: 51.4552300
-  longitude: -2.5966500
+  latitude: 51.4546372
+  longitude: -2.5926159
 
 # Contact form tag line
 contact-us: Have questions? We love to hear from customers, get in touch and we'll respond as quickly as possible
