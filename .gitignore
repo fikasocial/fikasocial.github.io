@@ -3,3 +3,4 @@ _site
 .classpath
 *.swp
 theme
+.DS_Store
