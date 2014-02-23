@@ -1,6 +1,6 @@
 ---
 
-title: The decision
+title: The search for suppliers
 categories: [ 'suppliers', 'search' ]
 layout: post
 

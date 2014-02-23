@@ -1,6 +1,6 @@
 ---
 
-title: The decision
+title: Our angle
 categories: [ 'naming', 'artisan', 'our angle', 'coffee' ]
 layout: post
 
