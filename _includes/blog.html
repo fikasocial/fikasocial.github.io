@@ -5,6 +5,7 @@
         <header>
             <h4 class="line-divider">Blog</h4>
             <h1>Recent Blog Posts</h1>
+            {% if 4000 == site.port %}
             <div class="row">
                 <div class="span8 offset2">
                     <div class="input-append">
@@ -13,7 +14,8 @@
                     </div>
                 </div>
             </div>
-
+            {% endif %}
+            {% if 4000 == site.port %}
             <!-- Sub menu -->
             <nav class="submenu">
                 <ul>
@@ -27,6 +29,7 @@
                     {% endfor %}
                 </ul>
             </nav>
+            {% endif %}
         </header>
         <!-- End Header -->
 
