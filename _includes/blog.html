@@ -37,11 +37,11 @@
                 {% for post in site.posts limit:6 %}
                 <li class="span4">
                   <a href="{{ post.url }}">
-                      {% if post.image %}
-                      <img src="{{ post.image }}" />
-                      {% else %}
-                      <img src="http://placehold.it/390x300" />
-                      {% endif %}
+                        {% if page.image %}
+                        <img class="blog-title-small" src="{{ site.url }}/assets/images/blog/{{ page.image }}" />
+                        {% else %}
+                        <img class="blog-title-small" src="{{ site.url }}/assets/images/blog/default.jpg" alt="Blog title image - Photo of Stockholm from the river">
+                        {% endif %}
                     </a>
                     <h5>{{ post.title }}<br/>{{ post.date | date_to_long_string }}</h5>
                     <p class="smallFontBy08">{{ post.excerpt }}</p>

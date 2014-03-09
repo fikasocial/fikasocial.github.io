@@ -17,3 +17,13 @@ li.menu-item div.menu-item-image {
     width: 550px;
     height: 350px;
 }
+
+img.blog-title {
+    max-height: 450px;
+    max-width: 900px;
+}
+
+img.blog-title-small {
+    max-height: 300px;
+    max-width: 390px;
+}
