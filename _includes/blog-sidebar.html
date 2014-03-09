@@ -1,4 +1,6 @@
 <div class="span4 blog-list-right">
     {% include post-list.html %}
+    {% if 4000 == site.port %}
     {% include category-list.html %}
+    {% endif %}
 </div>
