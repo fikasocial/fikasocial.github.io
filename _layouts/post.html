@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="span8 offset2">
                         <div class="input-append">
-                          <input class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
+                          <input class="span5" id="appendedInputButton" type="text" placeholder="Search Blog" />
                           <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
                         </div>
                     </div>
@@ -28,9 +28,9 @@
                     <article>
                         <!-- Blog image -->
                         {% if page.image %}
-                        <img src="{{ page.image }}" />
+                        <img class="blog-title" src="{{ site.url }}/assets/images/blog/{{ page.image }}" />
                         {% else %}
-                        <img src="http://placehold.it/900x450" alt="Treble">
+                        <img class="blog-title" src="{{ site.url }}/assets/images/blog/default.jpg" alt="Blog title image - Photo of Stockholm from the river">
                         {% endif %}
 
                         <!-- Blog title -->
