@@ -4,12 +4,12 @@
         <!-- Header -->
         <header>
             <h4 class="line-divider">About</h4>
-            
+
             {% capture content %}{% include about-us.markdown %}{% endcapture %}
             {{ content | markdownify }}
             <br/>
             <br/>
-            <h1>Meet The Team</h1>
+            <h2>Meet The Team</h2>
             <div class="row">
                 <div class="span8 offset2">
                     <p>We take almost as much pride in our staff as we do in our coffee. Meet our team...</p>
@@ -17,7 +17,7 @@
             </div>
         </header>
         <!-- End Header -->
-        
+
         <!-- Article -->
         <article>
             <!-- List of people and description with their contact details which are visable on hover -->
@@ -27,7 +27,7 @@
                      <div class="item">
                         <!-- Team member image -->
                         <img class="img-circle" src="/assets/images/team/{{ team.image }}" alt="{{ team.name }}">
-                        
+
                         <!-- Team memeber details, activated on hover -->
                         <div class="about-overlay img-circle">
                             <div class="social-icons sicon-white">
@@ -49,13 +49,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Team member name and function -->
                     <h5>
                         {{ team.name }}<br/>
                         <small>{{ team.position }}</small>
                     </h5>
-                    
+
                     <!-- Team member short info -->
                     <p class="smallFontBy08">{{ team.summary }}</p>
                 </li>

@@ -1,4 +1,4 @@
-# About Fika Social
+## About Fika Social
 
 _verb: Swedish verb meaning “to go out for coffee,” the word Fika can also be used as a noun (“coffee break”)._
 
