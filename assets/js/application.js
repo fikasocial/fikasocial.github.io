@@ -31,18 +31,6 @@ $(document).ready(function(){
         })
     }
 
-    //Scroll spy and scroll filter
-    $('#main-menu').onePageNav({
-        currentClass: 'active',
-        changeHash: false,
-        scrollOffset: navigationHeight - 10,
-        scrollThreshold: 0.5,
-        scrollSpeed: 750,
-        filter: '',
-        easing: 'swing',
-     })
-
-
     // Paralax initialization.
     // Exclude for mobile.
     if (pageWidth > 980) {

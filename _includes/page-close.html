@@ -16,7 +16,21 @@
     <script src="{{ site.url }}/assets/js/plugins/jquery.bxslider.min.js" type="text/javascript"></script>
     <script src="{{ site.url }}/assets/js/plugins/jquery.responsivevideos.js" type="text/javascript"></script>
     <script src="{{ site.url }}/assets/js/plugins/jquery.centralized.js" type="text/javascript"></script>
+{% if hashLoader %}
     <script src="{{ site.url }}/assets/js/plugins/jquery.hashloader.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    //Scroll spy and scroll filter
+    $('#main-menu').onePageNav({
+        currentClass: 'active',
+        changeHash: false,
+        scrollOffset: navigationHeight - 10,
+        scrollThreshold: 0.5,
+        scrollSpeed: 750,
+        filter: '',
+        easing: 'swing',
+     })
+    </script>
+{% endif %}
     <script src="{{ site.url }}/assets/js/plugins/jquery.fixedonlater.js" type="text/javascript"></script>
     <script src="{{ site.url }}/assets/js/plugins/jquery.nav.js" type="text/javascript"></script>
     <script src="{{ site.url }}/assets/js/plugins/jquery.scrollTo.js" type="text/javascript"></script>
