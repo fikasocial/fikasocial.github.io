@@ -9,12 +9,12 @@ telephone-number: (44) 117 950 25667
 email-address: info@fikasocial.co.uk
 address: Coming soon...
 
-# location:
-#  latitude: 51.4546372
-#  longitude: -2.5926159
+location:
+  latitude: 51.4684055
+  longitude: -2.730792
 
 # Contact form tag line
-contact-us: Have questions? We love to hear from customers, get in touch and we'll respond as quickly as possible
+contact-us: Have questions? We love to hear from you, get in touch and we'll respond as quickly as possible
 
 
 googleAnalytics: UA-45398981-1
