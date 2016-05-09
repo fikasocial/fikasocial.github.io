@@ -7,59 +7,8 @@
 
             {% capture content %}{% include about-us.markdown %}{% endcapture %}
             {{ content | markdownify }}
-            <h2>Meet The Team</h2>
-            <div class="row">
-                <div class="span8 offset2">
-                    <p>We take almost as much pride in our staff as we do in our coffee. Meet our team...</p>
-                </div>
-            </div>
         </header>
         <!-- End Header -->
-        <!-- Article -->
-        <article>
-            <!-- List of people and description with their contact details which are visable on hover -->
-            <ul class="thumbnails about-items">
-                {% for team in site.data.team %}
-                <li class="span4 center">
-                     <div class="item">
-                        <!-- Team member image -->
-                        <img class="img-circle" src="/assets/images/team/{{ team.image }}" alt="{{ team.name }}">
-
-                        <!-- Team memeber details, activated on hover -->
-                        <div class="about-overlay img-circle">
-                            <div class="social-icons sicon-white">
-                                {% if team.facebook %}
-                                    <a href="https://facebook.com/{{ team.facebook }}" target="_blank" class="sicon-facebook"><i>Facebook</i></a>
-                                {% endif %}
-                                {% if team.twitter %}
-                                <a href="https://twitter.com/{{ team.twitter }}" class="sicon-twitter"><i>Twitter</i></a>
-                                {% endif %}
-                                {% if team.youtube %}
-                                <a href="https://youtube.com/{{ team.youtube }}" class="sicon-youtube" target="_blank" ><i>Youtube</i></a>
-                                {% endif %}
-                                {% if team.pinterest %}
-                                <a href="https://pinterest.com/{{ team.pinterest }}" class="sicon-pinterest" target="_blank" ><i>Pinterest</i></a>
-                                {% endif %}
-                                {% if team.website %}
-                                <a href="{{ team.website }}" class="sicon-website" target="_blank" ><i>Website</i></a>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Team member name and function -->
-                    <h5>
-                        {{ team.name }}<br/>
-                        <small>{{ team.position }}</small>
-                    </h5>
-
-                    <!-- Team member short info -->
-                    <p class="smallFontBy08">{{ team.summary }}</p>
-                </li>
-                {% endfor %}
-            </ul>
-        </article>
-        <!-- End Article -->
     </div>
 </div>
 <!-- END PAGE | ABOUT -->
