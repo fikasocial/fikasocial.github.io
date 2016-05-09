@@ -66,12 +66,12 @@
             map.getProjectionObject()
         )
 
-    var zoom = 17
+    var zoom = 13
 
-    var markers = new OpenLayers.Layer.Markers('Markers')
-    map.addLayer(markers)
+    /*var markers = new OpenLayers.Layer.Markers('Markers')
+    map.addLayer(markers)*/
 
-    markers.addMarker(new OpenLayers.Marker(lonLat))
+   // markers.addMarker(new OpenLayers.Marker(lonLat))
 
     map.setCenter (lonLat, zoom)
   </script>
